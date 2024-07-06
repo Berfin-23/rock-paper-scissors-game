@@ -1,0 +1,114 @@
+/* || CSS RESETS || */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    /* Colors */
+    --primary-color: rgb(25, 25, 25);
+    --secondary-color: white;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* || LIGHT MODE || */
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-color:  rgb(240, 240, 247);
+        --secondary-color: black;
+    }
+}
+
+/* || DARK MODE || */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: rgb(25, 25, 25);
+        --secondary-color: white;
+    }
+}
+
+button {
+    font: inherit;
+}
+
+/* || BODY || */
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+.title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.move-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.move-button {
+    border: var(--secondary-color) 2px dashed;
+    background-color: transparent;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.moves {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.moves-display {
+    font-size: 1.5rem;
+    padding-top: 10px;
+    margin-left: 70px;
+}
+
+.moves-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.scores {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.score-reset {
+    font-size: 15px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 8px 15px;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+}
+
+
